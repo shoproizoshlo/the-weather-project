@@ -125,3 +125,8 @@ body {
 .fa-cloud-sun {
   color: #ffbd39;
 }
+.github-link {
+  margin: auto;
+  font-size: 7px;
+  text-align: center;
+}
