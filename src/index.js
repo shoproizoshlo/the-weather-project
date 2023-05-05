@@ -1,6 +1,5 @@
 // In your project, display the current date and time using JavaScript: Tuesday 16:00
 function showSignUpFormValues(event) {
-  event.preventDefault();
   let currentDate = new Date();
   let weekDay = [
     "Sunday",
@@ -48,7 +47,6 @@ function search(city) {
 
 function handleSubmit() {
   // подумать куда перенести эту функцию
-  showSignUpFormValues(event);
   let city = document.querySelector("#input-city").value;
   search(city);
 }
@@ -58,6 +56,7 @@ searchForm.addEventListener("submit", handleSubmit);
 
 // show city by default
 search("Kyiv");
+showSignUpFormValues(event);
 
 // Add a Current Location button. When clicking on it, it uses the Geolocation API to get your GPS coordinates and display and
 // the city and current temperature using the OpenWeather API.
