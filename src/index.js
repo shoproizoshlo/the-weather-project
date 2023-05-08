@@ -46,6 +46,7 @@ function search(city) {
 }
 
 function handleSubmit() {
+  event.preventDefault();
   // подумать куда перенести эту функцию
   let city = document.querySelector("#input-city").value;
   search(city);
@@ -55,7 +56,7 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 // show city by default
-search("Kyiv");
+search("Vienna");
 showSignUpFormValues(event);
 
 // Add a Current Location button. When clicking on it, it uses the Geolocation API to get your GPS coordinates and display and
