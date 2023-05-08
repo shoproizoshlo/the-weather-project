@@ -67,7 +67,11 @@ body {
   max-width: 13rem;
 }
 .location-pic {
-  font-size: 100px;
+  font-size: 80px;
+}
+.temp-units {
+  position: relative;
+  top: -43px;
 }
 .temp {
   padding-left: 0;
@@ -127,6 +131,6 @@ body {
 }
 .github-link {
   margin: auto;
-  font-size: 7px;
+  font-size: 10px;
   text-align: center;
 }
