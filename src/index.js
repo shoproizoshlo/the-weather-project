@@ -105,6 +105,7 @@ function search(city) {
   axios.get(apiUrl).then(cityWeather);
 }
 search("Vienna");
+
 function cityWeather(response) {
   console.log(response.data);
   let date = formatDate(response.data.dt * 1000);
@@ -190,3 +191,20 @@ function showCelsious(event) {
 
 let celsiousLink = document.querySelector("#celsius-link");
 celsiousLink.addEventListener("click", showCelsious);
+
+function currentLocation(response) {
+  document.querySelector("#city").innerHTML = `${response.data.name}`;
+  cityWeather(response);
+}
+function handlePosition(position) {
+  let apiKey = "e14a13b38652811a3dc9a8a3e4d551f6";
+  let positionApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(positionApiUrl).then(currentLocation);
+}
+function navigatorLocal(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(handlePosition);
+}
+
+let localButton = document.querySelector("#local-button");
+localButton.addEventListener("click", navigatorLocal);
