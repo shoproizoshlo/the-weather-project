@@ -53,10 +53,10 @@
         <div class="container headline">
           <div class="row">
             <div class="col-6 city">
-              <p id="city"></p>
+              <p id="city">Vienna</p>
             </div>
             <div class="col-6 time">
-              <p id="time">Monday 21:32</p>
+              <p>Updated: <span id="time">Monday 21:32</span></p>
             </div>
           </div>
         </div>
@@ -64,8 +64,13 @@
           <div class="container weather">
             <div class="row weather-row">
               <div class="col-6 location-weather">
-                <i class="fa-solid fa-cloud location-pic"></i>
-                <span id="temp-num" class="location"></span>
+                <img
+                  src="https://openweathermap.org/img/wn/10d@2x.png"
+                  alt="Partly cloudy"
+                  class="weather-img"
+                  id="weather-img"
+                />
+                <span id="temp-num" class="location">21</span>
                 <span class="temp-units">
                   <a href="#" id="celsius-link" class="temp location">C°</a>|<a
                     href="#"
@@ -77,7 +82,7 @@
               </div>
               <div class="col-6 data">
                 <ul class="data-list">
-                  <li class="data-row" id="description"></li>
+                  <li class="data-row" id="description">Clear</li>
                   <li class="data-row">Wind: <span id="speed"></span> km/h</li>
                   <li class="data-row">
                     Humidity: <span id="humidity"></span>%
