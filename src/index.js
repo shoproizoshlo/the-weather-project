@@ -155,3 +155,14 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+
+function formSubmit(event) {
+  event.preventDefault();
+  let inputCity = document.querySelector("#input-city");
+  search(inputCity.value);
+  let h1 = document.querySelector("#city");
+  h1.innerHTML = inputCity.value;
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", formSubmit);
