@@ -166,3 +166,27 @@ function formSubmit(event) {
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", formSubmit);
+
+function showFarenheit(event) {
+  event.preventDefault();
+  celsiousLink.classList.remove("active");
+  farenheitLink.classList.add("active");
+  let farenheitTemp = Math.round((celsiousTemp * 9) / 5 + 32);
+  let tempElement = document.querySelector("#temp-num");
+  tempElement.innerHTML = farenheitTemp;
+}
+let farenheitLink = document.querySelector("#fahrenheit-link");
+farenheitLink.addEventListener("click", showFarenheit);
+
+let celsiousTemp = null;
+
+function showCelsious(event) {
+  event.preventDefault();
+  celsiousLink.classList.add("active");
+  farenheitLink.classList.remove("active");
+  let tempElement = document.querySelector("#temp-num");
+  tempElement.innerHTML = Math.round(celsiousTemp);
+}
+
+let celsiousLink = document.querySelector("#celsius-link");
+celsiousLink.addEventListener("click", showCelsious);
