@@ -5,7 +5,7 @@ body {
   font-family: "Lora", serif;
 }
 .form-search {
-  margin: 20px 6px 23px 6px;
+  margin: 10px 6px 10px 6px;
   font-size: 16px;
 }
 .city-input {
@@ -34,44 +34,52 @@ body {
 
 .weather,
 .headline {
-  margin: auto;
-  text-align: center;
-  max-width: 53rem;
+  margin: 0;
+  max-width: 50rem;
 }
-.city {
-  padding: 1%;
-  color: #111f5b;
-  font-weight: 400;
-  font-size: 22px;
-  padding-left: 3%;
-  text-align: left;
+.headline-list,
+.city,
+.time {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  list-style: none;
   text-transform: capitalize;
 }
+.city {
+  padding-left: 5%;
+  color: #111f5b;
+  font-weight: 400;
+  font-size: 32px;
+}
 .time {
-  padding: 1%;
+  padding: 3%;
+  text-align: right;
   color: #111f5b;
   font-weight: 100;
-  font-size: 20px;
-  padding-right: 3%;
-  text-align: right;
+  font-size: 15px;
+  vertical-align: middle;
 }
 .location-weather {
-  padding-left: 3%;
+  padding: 0;
   text-align: left;
+  max-height: 100px;
 }
 .location {
-  padding-left: 7px;
+  padding-left: 1px;
   color: #111f5b;
-  font-size: 79px;
+  font-size: 70px;
   font-weight: 500;
   max-width: 13rem;
+  position: relative;
+  top: -25px;
 }
-.location-pic {
-  font-size: 80px;
+.weather-img {
+  vertical-align: 0;
 }
 .temp-units {
   position: relative;
-  top: -43px;
+  top: -65px;
 }
 .temp {
   padding-left: 0;
@@ -79,17 +87,15 @@ body {
   font-weight: 300;
 }
 .data {
-  margin: auto;
-  padding: 1%;
   color: #111f5b;
   font-size: 16px;
   font-weight: 300;
   direction: rtl;
 }
 .data-list {
-  list-style: none;
-  padding: 4%;
   margin: 0;
+  padding: 2%;
+  list-style: none;
   text-align: right;
   text-transform: capitalize;
 }
