@@ -3,6 +3,10 @@ body {
   padding: 10px;
   width: 700px;
   font-family: "Lora", serif;
+  color: #48484a;
+}
+.card-body {
+  padding: 5px;
 }
 .form-search {
   margin: 10px 6px 10px 6px;
@@ -13,23 +17,23 @@ body {
   padding-left: 25px;
   width: 61%;
   height: 50px;
-  border: 2px outset rgba(142, 159, 230, 0.3);
+  border: 2px outset #ec6e4c;
   border-radius: 30px;
-  box-shadow: -1px 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: -1px 5px 20px rgba(231, 139, 115, 0.1);
 }
 .search-button {
   margin: 5px;
   width: 16%;
   height: 51px;
-  color: #111f5b;
-  background-color: #f1f4fc;
-  border: 2px outset rgba(142, 159, 230, 0.3);
+  color: #48484a;
+  background-color: #fdf8f6;
+  border: 2px outset #ec6e4c;
   border-radius: 20px;
-  box-shadow: -1px 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: -1px 5px 20px rgba(231, 139, 115, 0.1);
   transition: all 150ms ease-in-out;
 }
 .search-button:hover {
-  background-color: #c7d0e8;
+  background-color: #fdf1ee;
 }
 
 .weather,
@@ -48,14 +52,12 @@ body {
 }
 .city {
   padding-left: 5%;
-  color: #111f5b;
   font-weight: 400;
   font-size: 32px;
 }
 .time {
   padding: 3%;
   text-align: right;
-  color: #111f5b;
   font-weight: 100;
   font-size: 15px;
   vertical-align: middle;
@@ -67,7 +69,6 @@ body {
 }
 .location {
   padding-left: 1px;
-  color: #111f5b;
   font-size: 70px;
   font-weight: 500;
   max-width: 13rem;
@@ -87,7 +88,6 @@ body {
   font-weight: 300;
 }
 .data {
-  color: #111f5b;
   font-size: 16px;
   font-weight: 300;
   direction: rtl;
@@ -98,6 +98,19 @@ body {
   list-style: none;
   text-align: right;
   text-transform: capitalize;
+}
+.forecast {
+  margin: 1%;
+  margin-bottom: 20px;
+}
+.forecact-card {
+  margin: 1%;
+  padding: 2%;
+  text-align: center;
+  border-radius: 20px;
+}
+.forecact-card:hover {
+  background-color: #fdf8f6;
 }
 .github-link {
   margin: auto;
