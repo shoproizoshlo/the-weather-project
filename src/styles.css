@@ -99,42 +99,6 @@ body {
   text-align: right;
   text-transform: capitalize;
 }
-.card-deck {
-  font-size: 40px;
-  text-align: center;
-  max-width: 50rem;
-  margin-bottom: 10px;
-}
-.card-body {
-  padding: 5px;
-}
-.week-day {
-  border: 0 solid;
-  transition: all 150ms ease-in-out;
-}
-.week-day:hover {
-  background-color: #f1f4fc;
-}
-.card-title {
-  font-size: 14px;
-  font-weight: 300;
-}
-.card-pic {
-  font-size: 50px;
-}
-.card-text {
-  margin: 5px;
-  font-size: 20px;
-}
-.fa-cloud,
-.fa-cloud-sun-rain,
-.fa-cloud-showers-heavy {
-  color: #8e9fe6;
-}
-.fa-sun,
-.fa-cloud-sun {
-  color: #ffbd39;
-}
 .github-link {
   margin: auto;
   font-size: 10px;
