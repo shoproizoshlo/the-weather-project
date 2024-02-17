@@ -1,6 +1,6 @@
 # SheCodes - The weather app solution
 
-This is a solution to the [SheCodes Plus](https://www.shecodes.io/workshop-plus). SheCodes teach women how to code in order to work towards decreasing the gender gap in the tech industry. Created with step-by-step tutorial.
+This is a solution to the [SheCodes Web Development](https://www.shecodes.io/workshop-plus). SheCodes teach women how to code in order to work towards decreasing the gender gap in the tech industry. Created with step-by-step tutorial.
 
 ## Table of contents
 
@@ -11,10 +11,7 @@ This is a solution to the [SheCodes Plus](https://www.shecodes.io/workshop-plus)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
